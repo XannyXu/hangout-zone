@@ -2,12 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Homepage from './components/Homepage';
+import TeamC from './components/TeamC';
+import Minecraft from './components/Minecraft';
+import Header from './components/Header';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Homepage />
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/teamc" element={<TeamC />} />
+            <Route path="/minecraft" element={<Minecraft />} />
+        </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

@@ -1,26 +1,24 @@
 import Footer from "./Footer"
 import Header from "./Header"
 
-const Homepage = () => {
+const Minecraft = () => {
     return (
         <div className="bg-[#4F9E8E] text-white">
             <Header/>
             <div className="m-10">
                 <div className="flex">
                     <div className="basis-1/2 text-4xl font-bold">
-                        This is Hangout Zone.
+                        We have a Minecraft Server.
                     </div>
                 </div>
                 <div className="text-lg">
-                    Hangout Zone is where I go to hang out with my friends. I [XannyXu] maintain it and for the most part maintain our other projects.
+                    Server Info.
                     {/* Team C Studios is an indie game development group created by XannyXu, Frank_the_Ogre, and their friends. */}
-                </div>
-                <div className="text-lg">
-                    Here is the Discord invite link: <a className="text-blue-700 visited:text-purple-700" target="blank" href={"https://discord.gg/2wRXVWTMbB"}>Hangout Zone Discord</a>
                 </div>
             </div>
             <Footer/>
         </div>
     )
 }
-export default Homepage
+
+export default Minecraft
